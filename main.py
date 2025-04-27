@@ -13,6 +13,13 @@ while True:
     hands, img = detector.findHands(img)
     img1 = cv2.imread('prof1.png')
 
+
+    if len(hands) == 2:
+        if detector.fingersUp(hands[0]) == [1, 1, 0, 0, 0] and detector.fingersUp(hands[1]) == [1, 1, 0, 0, 0]:
+            print("Zoom")
+
+
+
     img[0:500, 0:500] = img1
     cv2.imshow("Image", img)
     key = cv2.waitKey(1)
