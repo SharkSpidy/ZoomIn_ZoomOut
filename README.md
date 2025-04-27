@@ -43,11 +43,11 @@ For Software:
 
 
 # Screenshots
-![Screenshot1]()
+![Screenshot1](https://github.com/SharkSpidy/ZoomIn_ZoomOut/blob/main/Media/sc1.png)
 
-![Screenshot2]()
+![Screenshot2](https://github.com/SharkSpidy/ZoomIn_ZoomOut/blob/main/Media/sc2.png)
 
-![Screenshot3]()
+![Screenshot3](https://github.com/SharkSpidy/ZoomIn_ZoomOut/blob/main/Media/sc3.png)
 
 ### Project Demo
 # Video
