@@ -6,6 +6,8 @@ cap.set(3, 1080)
 cap.set(4, 720)
 
 detector = HandDetector(detectionCon=0.8)
+scale = 0
+cx, cy = 500, 500
 startDist = None
 
 while True:
@@ -24,15 +26,24 @@ while True:
                 startDist = length
             
             length, info, img = detector.findDistance(hands[0]["center"], hands[1]["center"], img)
-            scale = length - startDist
-            
+            scale = int(length - startDist)//2
+            cx, cy = info[4:]
             print(scale)
     else:
         startDist = None
 
 
+    try:
+        h1, w1, _ = img1.shape
+        newH, newW = ((h1 + scale)//2)*2, ((w1 + scale)//2)*2
+        img1 = cv2.resize(img1, (newW, newH))
 
-    img[10:260, 10:260] = img1
+
+        img[cy-newH//2 :cy + newH//2, cx-newW//2 :cx + newW//2] = img1
+    except:
+        pass
+
+
     cv2.imshow("Image", img)
     key = cv2.waitKey(1)
     if key == ord('q'):
