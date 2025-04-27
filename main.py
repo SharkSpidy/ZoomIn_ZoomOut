@@ -32,7 +32,6 @@ while True:
     else:
         startDist = None
 
-
     try:
         h1, w1, _ = img1.shape
         newH, newW = ((h1 + scale)//2)*2, ((w1 + scale)//2)*2
