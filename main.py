@@ -1,6 +1,17 @@
-def main():
-    print("Hello from zoomin-zoomout!")
+import cv2
+from cvzone.HandTrackingModule import HandDetector
+
+cap = cv2.VideoCapture(0)
+cap.set(3, 1280)
+cap.set(4, 720)
+
+detector = HandDetector(detectionCon=0.8)
 
 
-if __name__ == "__main__":
-    main()
+while True:
+    success, img = cap.read()
+    hands, img = detector.findHands(img)
+    cv2.imshow("Image", img)
+    key = cv2.waitKey(1)
+    if key == ord('q'):
+        break
