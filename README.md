@@ -51,7 +51,7 @@ For Software:
 
 ### Project Demo
 # Video
-![Video]()
+[Video](https://github.com/SharkSpidy/ZoomIn_ZoomOut/blob/main/Media/Recording%202025-04-27%20210849.mp4)
 
 ---
 Made with ❤️ by [Joseph Shibu](https://github.com/SharkSpidy)
