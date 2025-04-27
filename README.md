@@ -54,4 +54,4 @@ For Software:
 [Video](https://github.com/SharkSpidy/ZoomIn_ZoomOut/blob/main/Media/Recording%202025-04-27%20210849.mp4)
 
 ---
-Made with ❤️ by [Joseph Shibu](https://github.com/SharkSpidy)
+Made with ❤️ by [Joe](https://github.com/SharkSpidy)
